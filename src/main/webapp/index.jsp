@@ -4,131 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="chessboard.css"> -->
-    <style>
-        body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.chessboard{
-    border: 10px inset #3E54AC;
-    width: 50%;
-    height:50%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.chessboard div{
-   width: 10%;
-   height: 80px;
-    font-size: 60px;
-    text-align: center;
-    text-shadow: 5px 1px #f1edf0;
-    width: calc(100%/8);
-}
-
-.a{
-    background-color: #faf8f8;
-    width: 100%;
-    height: 12.5%;
-}
-.b{
-    background-color: black;
-    width: 100%;
-}
-    </style>
+    <title>form</title>
 </head>
 <body>
-     <div class="chessboard">
-      <div class="a">&#9820;</div>
-      <div class="b">&#9822;</div>
-      <div class="a">&#9821;</div>
-      <div class="b">&#9819;</div>
-      <div class="a">&#9818;</div>
-      <div class="b">&#9821;</div>
-      <div class="a">&#9822;</div>
-      <div class="b">&#9820;</div>
+    <form action="" method="get" autocomplete="on"></form>
+    <fieldset style="width:80%; background-color: aqua ;"</fieldset>
+        <legend>&#128123 <u><b><center>My details</center></b></u> &#128132 </legend>
+        <center>
+            <table bgcolor="green">
+                <tr>
+                    <td>
+                        <label for="fn"> First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fn" name="fn" required placeholder="first name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ln"> Last Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="ln" name="ln" required placeholder="Last name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for=""> DOB</label>
+                    </td>
+                    <td>
+                        <input type="datetime-local" id="DOB" name="DOB" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password"> Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" required placeholder="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email"> Email ID</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" required placeholder="email id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="adress"> Address</label>
+                    </td>
+                    <td>
+                        <textarea name="adress" id="adress" cols="20" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sports"> Sports</label>
+                    </td>
+                    <td>
+                        <select name="sports" id="sports" required> 
+                            <option value=""></option>
+                            <option value="cricket">cricket</option>
+                            <option value="vollyboll">vollyboll</option>
+                            <option value="shotput">shotput</option>
+                            <option value="foot ball"> foot ball</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender"> Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="gender" name="gender" value="male"  required> male
+                        <input type="radio" id="gender" name="gender" value="female"  required> female
 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="course"> Cource</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="course" name="html" value="html" required> html
+                        <input type="checkbox" id="course" name="css" value="css" required> css
+                        <input type="checkbox" id="course" name="java" value="java" required> java Script    
+                    </td>   
+                </tr>
+                <tr>
+                    <td>
+                        <label for="file"> Uplode File</label>
+                    </td>
+                    <td>
+                        <input type="file" id="file" name="file" required >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="image"> Uplode Image</label>
+                    </td>
+                    <td>
+                        <input type="image" id="image" name="image" src="./images/bird.jpeg" width="50px" height="50px" required >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="url"> Uplode url</label>
+                    </td>
+                    <td>
+                        <input type="search" id="url" name="url" required >
+                    </td>
+                </tr>
+                
+                
+               
+                
 
-      <div class="b">&#9823;</div>
-      <div class="a">&#9823;</div>
-      <div class="b">&#9823;</div>
-      <div class="a">&#9823;</div>
-      <div class="b">&#9823;</div>
-      <div class="a">&#9823;</div>
-      <div class="b">&#9823;</div>
-      <div class="a">&#9823;</div>
+            </table>
+            
+        </center>
 
-
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-
-
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-
-
-
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-
-
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-      <div class="b"></div>
-      <div class="a"></div>
-
-
-      <div class="a">&#9823;</div>
-      <div class="b">&#9823;</div>
-      <div class="a">&#9823;</div>
-      <div class="b">&#9823;</div>
-      <div class="a">&#9823;</div>
-      <div class="b">&#9823;</div>
-      <div class="a">&#9823;</div>
-      <div class="b">&#9823;</div>
-
-
-
-      <div class="b">&#9820;</div>
-      <div class="a">&#9822;</div>
-      <div class="b">&#9821;</div>
-      <div class="a">&#9819;</div>
-      <div class="b">&#9818;</div>
-      <div class="a">&#9821;</div>
-      <div class="b">&#9822;</div>
-      <div class="a">&#9820;</div>
-
-
-
-
-
-
-    </div>
 </body>
 </html>
